@@ -6,7 +6,7 @@ def ocr_core(image):
     text = pytesseract.image_to_string(img, 'storysquadset')
     return text
 
-img = cv2.imread('/Users/victoriadebebe/Documents/GitHub/Lambda_Labs/story-squad-ds-a/Practice Handwriting NB/MW-tester.jpg')
+img = cv2.imread('Photo 3101.jpg')
 
 # def get_grayscale(image):
 #     return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
