@@ -8,6 +8,12 @@ from skimage.io import imsave
 
 
 """
+For sandboxing purposes: Preprocesses an entire folder of images. 
+to be used for further training of the model.
+
+Change `Transcribed Stories` to a directory that is pertinent 
+for preprocessing a folder containing handwriting images.
+
 `os.chdir()` 
 Changes the current working directory to a particular path
 The `Transcribed Stories` path refers to the file that contains all the images 
