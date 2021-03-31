@@ -16,6 +16,8 @@ This repository is meant to be a sandboxed environment from the main Story Squad
 
 `langdata_lstm` :: Folder containing all components of every langauge that has already been trained using Tesseract.
 
+`update` :: Folder used for all preprocessing steps required before training. The `data` folder can be filled with any obtained training images. Run the `conversion.sh` script first to convert all images to png file format. Next, run `processing.py` with Python to create and save each processed image. Finally, run the `segmentation.sh` script to segment each image, have it saved as a tif and generate it's ground truth text file (that will then need to be corrected by hand).
+
 `eng.traineddata` :: This is the fully trained Tesseract model for the English language and needs to be placed into the `Tessie_True/tesseract/tessdata` directory.
 
 `storysquadset.traineddata` & `storysquadnew` :: These are our trained model versions so far `storysquadnew` being the newest model that you will pick up from. These also need to be stored in the `Tessie_True/tesseract/tessdata` directory.
